@@ -1,0 +1,113 @@
+/* Transaction Container */
+.transaction-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Controls for month selection and search box */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.controls select,
+.controls input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: rgb(105, 165, 222);
+}
+
+/* Glassmorphism Effect on Table Wrapper */
+.table-wrapper {
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(12px); /* Blur effect */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    height: fit-content;
+    overflow-y: auto;
+}
+
+/* Transaction Table */
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.transaction-table th {
+    background: rgba(0, 123, 255, 0.5);
+    backdrop-filter: blur(8px);
+    color: white;
+}
+
+.transaction-table td {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Transaction Images */
+.transaction-table img {
+    display: block;
+    margin: auto;
+    height: 70px;
+    width: 80px;
+    border-radius: 5px;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    background: rgba(0, 123, 255, 0.5);
+    backdrop-filter: blur(8px);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.pagination button:disabled {
+    background: rgba(255, 255, 255, 0.2);
+    cursor: not-allowed;
+}
+
+/* Pagination info */
+.pagination-info {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
